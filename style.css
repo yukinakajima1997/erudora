@@ -35,9 +35,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
+    
 }
 ol, ul {
 	list-style: none;
@@ -62,6 +60,7 @@ table {
     max-width: 100%;
 }
 
+
 /* header */
 .header{
     width: 100%;
@@ -69,6 +68,7 @@ table {
     background-color: white;
     padding: 8px 2px;
     z-index: 999;
+    box-sizing: border-box;
 }
 
 h1{
@@ -77,20 +77,23 @@ h1{
     font-weight: 700;
     padding-bottom: 6px;
     line-height: 18px;
+    font-family:'Noto Sans JP', sans-serif;
+
 }
 
 #header-cta{
+    box-sizing: border-box;
     width: 96%;
     display: flex;
-    margin-left: 4px;
+    margin: 0 auto;
 }
 
 #cta-line{
-    margin-left:2px;
+    padding-left:2px;
 }
 
 #cta-lesson{
-    margin-left: 4px;
+    padding-left: 4px;
 }
 
 #cta-lesson:hover, #cta-line:hover, #cta-call:hover{
@@ -133,6 +136,7 @@ img{
 }
 
 .solution{
+    width: 100%;
     box-sizing: border-box;
     margin: 0 auto;
     padding: 24px 16px 40px 16px;
@@ -152,10 +156,13 @@ img{
 }
 
 #solution-content p{
+    box-sizing: border-box;
     text-align: center;
     font-size: 18px;
     line-height: 1.6;
     margin: 16px 13px;
+    font-family:'Noto Sans JP', sans-serif;
+
 }
 
 p:nth-of-type(1){
@@ -176,12 +183,16 @@ span{
 #present{
     padding: 0 16px;
     max-width: 100%;
+    box-sizing: border-box;
+
 }
 
 .present-content{
     text-align: center;
-    padding: 8px;
+    padding: 16px;
     margin: 24px 0;
+    box-sizing: border-box;
+
 }
 
 .number{
@@ -203,10 +214,14 @@ h3{
     font-size: 18px;
     line-height: 1.6;
     text-align: center;
+    font-family:'Noto Sans JP', sans-serif;
+
 }
 
 /* reason */
 #reason{
+    width: 100%;
+    box-sizing: border-box;
     position: relative;
     text-align: center;
     height: auto;
@@ -218,16 +233,19 @@ h3{
     position: absolute;
     left: 8px;
     top: 4px;
-    width: 100%;
+    width: 95%;
 }
 
 #reason h2{
     color: white;
     font-size: 28px;
     font-weight: 700;
+    font-family:'Noto Sans JP', sans-serif;
+
 }
 
 #devider-reason{
+    margin-top: 24px;
     width: 40vw;
 }
 
@@ -236,6 +254,8 @@ h3{
     border-radius: 4px;
     padding: 16px ;
     margin-top: 24px;
+    box-sizing: border-box;
+
 }
 
 .reason-content h4{
@@ -244,6 +264,8 @@ h3{
     text-align: left;
     font-weight: 400;
     color: #212121;
+    font-family:'Noto Sans JP', sans-serif;
+
 }
 
 /* info */
@@ -257,10 +279,11 @@ h3{
 
 .devider2{
     width: 30vw;
-    margin-bottom: 24px;
+    margin: 24px 0;
 }
 
 .perf-content, .voice-content{
+    box-sizing: border-box;
     position: relative;
     margin: 0 16px;
     padding: 24px;
@@ -271,8 +294,8 @@ h3{
 
 #sticker{
     position: absolute;
-    width: 32vw;
-    left: 240px;
+    width: 28vw;
+    left: 70%;
     top: -48px;
 }
 
@@ -287,6 +310,8 @@ h4{
     line-height: 1.6;
     padding-top: 16px;
     color: #212121;
+    font-family:'Noto Sans JP', sans-serif;
+
 }
 
 #voice{
@@ -295,6 +320,7 @@ h4{
 }
 
 #sakura{
+    max-width: 95%;
     position: absolute;
     z-index: 2;
     left: 8px;
@@ -311,6 +337,8 @@ h4{
     line-height: 1.6;
     text-align: left;
     margin-left: 16px;
+    font-family:'Noto Sans JP', sans-serif;
+
 }
 
 .img-student{
@@ -403,7 +431,7 @@ footer p{
         position: absolute;
         left: 8px;
         top: 4px;
-        width: 100%;
+        width: 95%;
     }
 
     .reason-content{
@@ -438,7 +466,7 @@ footer p{
     
     #sticker{
         position: absolute;
-        width: 32vw;
+        width: 28vw;
         left: 560px;
         top: -80px;
     }
